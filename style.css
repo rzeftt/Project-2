@@ -1,0 +1,425 @@
+#divCard {
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 18%;
+}
+
+.btn {
+    background-color: rgb(242, 218, 175);
+    border: none;
+    margin-left: 10%;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(73, 156, 225);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.326);
+    transition: background-color 2s ease, border-radius 1s ease, box-shadow 1s ease;
+    color: rgb(255, 255, 255);
+}
+
+.background-nav-bar {
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 20%;
+    padding: 10px 0;
+}
+.background-nav-bar > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.first {
+    background-color: white;
+    border: none;
+}
+
+.nav-item {
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.nav-link {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    background-color: rgb(73, 156, 225);
+    border-radius: 50px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.326);
+    transition: background-color 2s ease, border-radius 1s ease, box-shadow 1s ease;
+    color: black;
+}
+
+.additional-info {
+height: 18vh;
+    position: absolute;
+    top: 8.6rem;
+    left: 1.8rem;
+    /* transform: translate(-50%, -50%); */
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+}
+/* .img{
+    height:15px;
+    width: 15px;
+} */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(73, 156, 225);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-gap: 10px;
+}
+
+#selectedCurrencies {
+    text-align: center;
+}
+
+.parallax {
+    background-image: url("assets/images/bit3.jpg");
+    min-height: 920px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 60%;
+    height: 100%;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.form-control {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px rgb(73, 156, 225);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    margin: 20px auto;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(0, 0, 0);
+}
+#clearInputBtn {
+    position: relative;
+    left: 11.5rem;
+    top: -1.2rem;
+    transform: translateY(-50%);
+    background: transparent; /* Set background to transparent */
+    border: none; /* Remove border */
+    /* cursor: pointer; */
+    font-size: 10px;
+    padding: 0; /* Remove any padding */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    width: 200%;
+    height: 150%;
+    margin-top: 30%;
+    object-fit: cover;
+}
+
+.aboutMe {
+    text-align: center;
+    direction: rtl;
+    margin-top: 3.5rem;
+/* margin-right: zrem; */
+    color: #000000;
+}
+
+.aboutMe:hover {
+    font-weight: bold;
+}
+
+.aboutProject {
+    direction: rtl;
+    margin-top: 18px;
+    color: #000000;
+}
+
+
+.divLower {
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid rgb(73, 156, 225);
+    color: rgb(73, 156, 225);
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.spanHome,
+.spanLive,
+.spanAbout {
+    margin: 0 15px; /* Adjust the margin value as needed for space between spans */
+}
+.nav-link:active {
+    color: white;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.color-hr {
+    color: rgb(73, 156, 225);
+}
+
+#bottomTabInfo {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#searchBtn {
+    width: 70px;
+    height: 40px;
+    border: solid 1px rgb(73, 156, 225);
+   
+}
+#searchBtn {
+    width: 70px;
+    height: 40px;
+    border: solid 1px rgb(73, 156, 225);
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20%;
+}
+/* #showSelectedCurrenciesBtn2{
+    width: 70px;
+    height: 40px;
+    border: solid 1px rgb(73, 156, 225);
+   
+} */
+#showSelectedCurrenciesBtn2 {
+    width: 70px;
+    height: 40px;
+    border: solid 1px rgb(73, 156, 225);
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 60%;
+    margin-right: 20%;
+}
+#countryName {
+    border: solid 1px rgb(242, 218, 175);
+    border-radius: 50px 0px 0px 50px;
+    margin-left: 10px; /* השנה כאן כדי לקבוע את המרווח בין האינפוט לכפתור */
+    height: 40px;
+    width: 200px;
+}
+
+#countryName:not(:placeholder-shown) {
+    background-color: white;
+}
+#spanHome{
+    cursor: pointer;
+}
+#spanLive{
+    cursor: pointer;
+}
+#spanAbout{
+ cursor: pointer;
+}
+.collar-button {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid  rgb(73, 156, 225);
+    border-radius: 40%;;
+    margin-top: 1.9rem;
+   margin-left: 0.2rem;
+    position: relative;
+}
+.progress-bar {
+    width: 0;
+    height: 8px; /* Adjust the height for a thicker progress bar */
+    background-color: rgb(73, 156, 225); /* Change color as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: width 0.2s ease;
+}
+#searchInput {
+    border: solid 1px rgb(242, 218, 175);
+    border-radius: 50px 0px 0px 50px;
+    
+    height: 40px;
+    width: 200px;
+/* display: inline; */
+}
+
+#searchInput:not(:placeholder-shown) {
+    background-color: white;
+}
+
+#searchContainer{
+    margin-left:  40%;
+}
+#searchContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+
+#searchInput {
+    padding: 8px;
+    font-size: 16px;
+    border: solid 1px rgb(242, 218, 175);
+    border-radius: 50px 0px 0px 50px;
+    margin-left: 10px; /* השנה כאן כדי לקבוע את המרווח בין האינפוט לכפתור */
+    height: 40px;
+    width: 200px
+
+}
+
+#showSelectedCurrenciesBtn2 {
+    width: 70px;
+    height: 40px;
+    border: solid 1px rgb(73, 156, 225);
+    border-radius: 0px 50px 50px 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    padding: 8px 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 5px; 
+    display: none;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+.card {
+    margin-top: 20px; /* הוספתי רווח תחתון גדול יותר */
+  
+}
